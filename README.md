@@ -1,5 +1,12 @@
 # safecity
 
+## backend
+npm install bcryptjs body-parser cors dotenv express jsonwebtoken mongoose nodemon
+
+## frontend
+npm install @coreui/coreui @coreui/react @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/user-event axios chart.js jwt-decode react react-chartjs-2 react-dom react-router-dom react-scripts recharts web-vitals
+
+
 For Citizen
 
 -- name: Lance Mirano
