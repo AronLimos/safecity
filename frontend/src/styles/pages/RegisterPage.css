@@ -1,0 +1,103 @@
+/* RegisterPage.css */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Ensure the page takes full height */
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+}
+
+.register-container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items vertically in the center */
+    width: 100%;
+    max-width: 1200px; /* Max width for the whole layout */
+    gap: 40px; /* Space between the image and the form */
+}
+
+/* Image Section */
+.register-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content horizontally */
+    margin-right: 40px; /* Add space between the image/container and form */
+}
+
+.register-image img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Fixed width for the image */
+}
+
+.tagline {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px; /* Adds space between the logo and the tagline */
+    color: #333; /* Optional color */
+}
+
+/* Register Form Container */
+.register-form-container {
+    max-width: 500px; /* Restrict the form width */
+    padding: 20px;
+    background-color: #fff; /* Add a background for clarity */
+    border-radius: 15px; /* Rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle dropdown shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+}
+
+/* Form Heading */
+.register-form-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Input fields and buttons */
+.register-form-container input,
+.register-form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #217dbb;
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%; /* Ensures it takes the full width of its container */
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+}

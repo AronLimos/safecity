@@ -1,0 +1,87 @@
+/* UpdateReportPage.css */
+
+/* Center the form container */
+.update-report-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff; /* Add a background for clarity */
+    border-radius: 15px; /* Rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle dropdown shadow */
+}
+
+/* Center the title */
+.update-report-title {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Error and success messages */
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Input field styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Button container */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Back button styling */
+.back-button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #b0b0b0;
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #217dbb;
+}

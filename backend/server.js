@@ -10,10 +10,6 @@ const categoryRoutes = require('./routes/categoryRoutes');
 const statusRoutes = require('./routes/statusRoutes');
 const userRoutes = require('./routes/userRoutes');
 
-
-// const dotenv = require('dotenv');
-// dotenv.config();
-
 const app = express();
 
 // Connect to database

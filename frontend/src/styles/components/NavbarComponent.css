@@ -1,0 +1,87 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+/* Logo or Title Styles */
+.navbar__link {
+  text-decoration: none;
+  color: white; /* Set text color to white */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__logo {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  object-fit: contain; /* Ensure logo keeps its aspect ratio */
+}
+
+.navbar__title {
+  margin: 0;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+/* User Greeting and Buttons Container */
+.navbar__user-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: nowrap;
+}
+
+/* Greeting Box Styles */
+.navbar__greeting {
+  font-size: 16px;
+  min-width: 150px; /* Ensures enough space for most names */
+  max-width: 250px; /* Prevents excessive stretching */
+  white-space: nowrap;
+  overflow: visible; /* No text hiding */
+  text-overflow: unset; /* Ensures full name is shown */
+}
+
+/* Button Styles */
+.navbar__button {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Register Button */
+.navbar__register-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.navbar__register-btn:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Login/Logout Button */
+.navbar__login-logout-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.navbar__login-logout-btn.logout {
+  background-color: #e74c3c;
+}
+
+.navbar__login-logout-btn.logout:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.navbar__login-logout-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}

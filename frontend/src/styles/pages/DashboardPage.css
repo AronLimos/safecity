@@ -1,0 +1,299 @@
+/* General Reset to Prevent Overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensure padding/border are included in width/height calculations */
+}
+
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling on the body */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Dashboard Content Layout */
+.dashboard-content {
+  display: flex; /* Use flexbox to align children side by side */
+  justify-content: space-between; /* Distribute space between report and chart sections */
+  gap: 20px; /* Add space between the sections */
+  width: 100%; /* Make sure the dashboard content takes the full width */
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+/* Crime Reports Section - Updated for card-like design */
+.quadrant,
+.report-section {
+  flex: 1 1 30%; /* Ensure this section takes 25% of the available width */
+  min-width: 250px; /* Prevent this section from getting too narrow */
+  padding: 20px; /* Padding inside the card */
+  margin: 20px;
+  background-color: #fff; /* Add a background for clarity */
+  border-radius: 15px; /* Rounded corners for the card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle dropdown shadow */
+  overflow: hidden; /* Prevent overflow from breaking card boundaries */
+}
+
+/* Crime Reports Header */
+.report-section h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Filter Container */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+/* Filter Input and Select */
+.filter-container .filter-input,
+.filter-container select {
+  flex: 1;
+  min-width: 150px; /* Ensures input field doesn't get too small */
+  max-width: 100%; /* Prevent overflow on smaller screens */
+  border-radius: 8px; /* Rounded edges for both input and select */
+  padding: 12px 18px; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Light gray border */
+  color: #333; /* Dark text */
+}
+
+
+/* Tweet Card */
+.tweet-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+/* Tweet Header */
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Header Left (User and Date) */
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.tweet-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Header Right (Edit/Delete Buttons) */
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #333; /* Neutral color for professionalism */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0; /* Subtle hover effect */
+  border-radius: 4px; /* Slight roundness for buttons */
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background: none;
+}
+
+.edit-btn i,
+.delete-btn i {
+  font-size: 1.2rem;
+}
+
+.edit-btn i {
+  color: #3498db; /* Professional blue for edit */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.edit-btn:hover i {
+  color: #2980b9; /* Darker blue for hover */
+}
+
+.delete-btn i {
+  color: #e74c3c; /* Professional red for delete */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.delete-btn:hover i {
+  color: #c0392b; /* Darker red for hover */
+}
+
+/* Tweet Body */
+.tweet-body {
+  padding: 10px 0;
+}
+
+.tweet-body p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Tweet Footer */
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.tweet-footer span {
+  display: inline-block;
+}
+
+/* Chart Section */
+.chart-section {
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
+}
+
+/* Quadrant container */
+.quadrant-container {
+  display: grid;
+  grid-template-columns: 50% 50%; /* Two columns for A-B and C-D */
+  grid-template-rows: 50% 50%; /* Two rows for A-B and C-D */
+  height: 100%; /* Full height of the 70% section */
+}
+
+/* Quadrant styles */
+.quadrant {
+  position: relative; /* Keep the quadrant relative to hold the title */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* Custom style for the Line Chart that spans both A and B */
+#A-B {
+  grid-column: span 2; /* Span across both columns for A and B */
+}
+
+/* Header */
+.chart-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Chart Container */
+.chart-container {
+  position: relative; /* So that the title stays inside */
+  width: 100%;
+  height: 300px; /* Adjust the height of the chart */
+}
+
+.chart-title {
+  position: absolute;
+  top: 10px; /* Adjust the position of the title */
+  left: 10px; /* Adjust the position of the title */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;  /* Remove default margin */
+  z-index: 10; /* Ensure the title stays on top of the chart */
+  color: #333; /* Choose a color that contrasts with the chart */
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+/* Minimalist scroll bar style */
+.feed-container {
+  margin-left: 15px;
+  max-height: 60vh;
+  overflow-y: scroll; /* Enables vertical scrolling */
+  padding-right: 10px; /* Optional: adds space for the scrollbar */
+}
+
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+.feed-container::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.feed-container::-webkit-scrollbar-track {
+  background-color: transparent; /* Track background */
+}
+
+.feed-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scroll thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid transparent; /* Optional: gives space around the thumb */
+  background-clip: content-box; /* Adds spacing around the thumb */
+}
+
+.feed-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker thumb color on hover */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Align the heading and button on opposite sides */
+  align-items: center; /* Vertically align them in the center */
+  margin-bottom: 20px; /* Optional, space between header and content */
+}
+
+.create-report-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: auto; /* Ensures the button isn't stretched */
+}
+
+.create-report-button:hover {
+  background-color: #2980b9;
+}
+
+

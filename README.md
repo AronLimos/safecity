@@ -1,5 +1,31 @@
 # safecity
 
+For Citizen
+
+-- name: Lance Mirano
+-- email: lance@example.com
+-- password: password123
+-- role: Citizen
+
+For Officers
+
+-- name: Peter Parker
+-- email: peterparker@rcmp-grc.ca
+-- password: rcmp123
+-- role: officer
+
+For Admin
+
+-- name: Joash Daligcon
+-- email: Joash.Daligcon@outlook.com
+-- password: admin6467
+-- role: admin
+
+
+
+
+
+
 // 1. Prepare mongo DB (mongosh)  
 // Insert Values for Backend  
 In terminal run  

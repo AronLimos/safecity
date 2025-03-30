@@ -1,4 +1,5 @@
 const Report = require('../models/Report');
+
 // Generate Report
 exports.createReport = async (req, res) => {
     try {
@@ -17,7 +18,6 @@ exports.createReport = async (req, res) => {
     }
 };
 
-// Function to get all reports
 // Function to get all reports
 exports.getReports = async (req, res) => {
     try {
